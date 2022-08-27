@@ -8,7 +8,8 @@
     <!-- 340 ~ 460px -->
     <title>Document</title>
     <style>
-        {
+        /*Reset de estilo*/
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -33,10 +34,19 @@
         }
 
         nav {
-            background-color: rgb(34, 32, 148);
+            background-color: black;
+        }
 
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
             color: lightblue;
+            text-decoration: none;
 
+        }
+
+        nav a:hover {
+            background-color: #eeeeee;
 
         }
     </style>
@@ -44,7 +54,8 @@
 
 <body>
     <header>
-        <div>
+        <!-- "Logo" pode ser qualquer nome para identificar -->
+        <div id="logo">
 
             <img src="https://wilcity.com/wp-content/uploads/2020/06/115-1150152_default-profile-picture-avatar-png-green.jpg"
                 alt="foto de perfil">
@@ -63,17 +74,17 @@
     </header>
 
     <nav>
-        <p>Inicio</p>
-        <p>Projetos</p>
-        <p>Empresa</p>
+        <a href="index.html">Inicio</a>
+        <a href="#Projetos">Projetos</a>
+        <a href="#Empresa">Empresa</a>
     </nav>
 
-    <section>
+    <section id="Projetos">
         <h1>Projetos</h1>
         <p>Casa Feliz</p>
     </section>
 
-    <section>
+    <section id="Empresa">
         <h1>Empresas</h1>
         <p>Senac Rio</p>
     </section>
