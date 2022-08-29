@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 340 ~ 460px -->
-    <title>Document</title>
+    <title>Meu Curriculo</title>
     <style>
         /*Reset de estilo*/
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
         }
 
         header {
             background-color: blueviolet;
-            background-image: url();
+            background-image: url(img/a1.jpg);
             background-size: cover;
             color: #eeeeee;
             padding: 30px;
@@ -29,12 +30,16 @@
 
         }
 
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
         header div img {
             width: 100px;
         }
 
         nav {
-            background-color: black;
+            background-color: blue;
         }
 
         nav a {
@@ -48,6 +53,49 @@
         nav a:hover {
             background-color: #eeeeee;
 
+        }
+
+        section * {
+            width: 100%;
+            min-width: 360px;
+            max-width: 1280px;
+            height: 100%;
+            min-height: 250px;
+            padding: 50px;
+
+
+        }
+
+        #Projetos {
+
+            display: flex;
+            background-color: black;
+            color: white;
+
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 20px;
+        }
+
+        #Empresa {
+
+            background-color: rgba(87, 87, 255, 0.755);
+            color: white;
+
+            padding: 1px 2px;
+        }
+
+        #Tecnologias {
+            display: flex;
+            background: black;
+            color: white;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 20px;
         }
     </style>
 </head>
@@ -64,12 +112,13 @@
 
         <h1>Marina Aragão</h1>
         <p>Progamandora WEB</p>
-        <p>Rio de janeiroo, Brasil,<br> Duque de Caxias</p>
-        <img src="./img/icons8-whatsapp-128.png" alt="logo facebook - com link para rede social  da pessoa">
+        <p>Rio de janeiro, Brasil,<br> Duque de Caxias</p>
+        <img src="./img/icons8-whatsapp-128.png" alt="logo facebook - com link para rede social  da pessoa" width="50">
 
-        <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa">
+        <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" width="50">
 
-        <img src="./img/icons8-reproduzir-youtube-128.png" alt="logo instagram - com link para rede social da pessoa">
+        <img src="./img/icons8-reproduzir-youtube-128.png" alt="logo instagram - com link para rede social da pessoa"
+            width="50">
 
     </header>
 
@@ -79,16 +128,32 @@
         <a href="#Empresa">Empresa</a>
     </nav>
 
-    <section id="Projetos">
-        <h1>Projetos</h1>
-        <p>Casa Feliz</p>
-    </section>
+    <div id="Projetos">
+        <div class="column">
+            <h1>Projetos</h1>
+            <img src="img/cookie-the-pom-gySMaocSdqs-unsplash.jpg" width="20%">
 
+            <img src="img/cookie-the-pom-gySMaocSdqs-unsplash.jpg" width="20%"> <br>
+            <img src="img/cookie-the-pom-gySMaocSdqs-unsplash.jpg" width="20%" ">
+            <img src=" img/cookie-the-pom-gySMaocSdqs-unsplash.jpg" width="20%">
+
+        </div>
+
+    </div>
+    </section>
     <section id="Empresa">
         <h1>Empresas</h1>
-        <p>Senac Rio</p>
+        <p>Freelancer</p>
     </section>
 
+    <Section id="Tecnologias">
+        <div class="column">
+            <h1>Tecnologias</h1>
+            <img src="img/htmlicon.png" alt="icone html" width="10%">
+            <img src="img/cssicon.png" alt="icone css" width="10%">
+            <img src="img/jsicon.png" alt="icone js" width="2%">
+        </div>
+    </Section>
     <footer>
 
     </footer>
